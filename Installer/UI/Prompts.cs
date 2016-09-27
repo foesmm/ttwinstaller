@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System.Linq;
 using TaleOfTwoWastelands.Properties;
 using System;
+using Resources.Properties;
 
 namespace TaleOfTwoWastelands.UI
 {

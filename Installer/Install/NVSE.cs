@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Net;
 using System.Windows.Forms;
+using Resources.Properties;
 using SevenZip;
 using TaleOfTwoWastelands.Properties;
 

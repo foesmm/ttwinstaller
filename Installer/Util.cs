@@ -6,6 +6,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
 using System.Text;
+using Resources.Properties;
 using TaleOfTwoWastelands.Properties;
 
 namespace TaleOfTwoWastelands

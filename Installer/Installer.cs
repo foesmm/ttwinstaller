@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using BSAsharp;
 using Resources;
+using Resources.Properties;
 using TaleOfTwoWastelands.Install;
 using TaleOfTwoWastelands.Progress;
 using TaleOfTwoWastelands.Patching;

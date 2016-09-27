@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Resources.Properties;
 using SevenZip;
 using TaleOfTwoWastelands.Progress;
 using TaleOfTwoWastelands.Properties;

@@ -4,6 +4,7 @@ using TaleOfTwoWastelands.Progress;
 using TaleOfTwoWastelands.Properties;
 using System.Linq;
 using Resources;
+using Resources.Properties;
 
 namespace TaleOfTwoWastelands.Install
 {

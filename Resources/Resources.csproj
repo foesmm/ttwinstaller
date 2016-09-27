@@ -51,14 +51,14 @@
     <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Localization.Designer.cs">
-      <DependentUpon>Localization.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\Paths.Designer.cs">
-      <DependentUpon>Paths.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>Paths.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -68,9 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Localization.resx">
+      <SubType>Designer</SubType>
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Localization.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Paths.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

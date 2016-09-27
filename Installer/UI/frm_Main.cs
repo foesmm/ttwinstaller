@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Resources.Properties;
 using TaleOfTwoWastelands.Progress;
 using TaleOfTwoWastelands.Properties;
 
@@ -24,8 +25,6 @@ namespace TaleOfTwoWastelands.UI
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
-            Util.AssertElevated();
-
             Log = DependencyRegistry.Container.GetInstance<ILog>();
             Log.DisplayMessage = new Progress<string>(UpdateLog);
 

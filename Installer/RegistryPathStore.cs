@@ -11,18 +11,18 @@ namespace TaleOfTwoWastelands
             using (var bethKey =
                 Registry.LocalMachine.OpenSubKey(
                 //determine software reg path (depends on architecture)
-                Environment.Is64BitOperatingSystem ? "Software\\Wow6432Node" : "Software", RegistryKeyPermissionCheck.ReadWriteSubTree))
+                Environment.Is64BitOperatingSystem ? "Software\\Wow6432Node" : "Software", RegistryKeyPermissionCheck.ReadSubTree))
             //create or retrieve BethSoft path
             {
                 Debug.Assert(bethKey != null, "bethKey != null");
-                return bethKey.CreateSubKey("Bethesda Softworks", RegistryKeyPermissionCheck.ReadWriteSubTree);
+                return bethKey.OpenSubKey("Bethesda Softworks", RegistryKeyPermissionCheck.ReadSubTree);
             }
         }
 
         public string GetPathFromKey(string keyName)
         {
             using (var bethKey = GetBethKey())
-            using (var subKey = bethKey.CreateSubKey(keyName))
+            using (var subKey = bethKey.OpenSubKey(keyName))
             {
                 Debug.Assert(subKey != null, "subKey != null");
                 return subKey.GetValue("Installed Path", "").ToString();
